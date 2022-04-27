@@ -1,0 +1,50 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <title>D3.js</title>
+    <style>
+        /*Schriftart*/
+        html {
+            font-family: sans-serif;
+        }
+        /*Text über dem Diagramm*/
+        #graphText {
+            display: flex;
+            text-indent: 10rem; 
+        }
+        /*Container um den chart Cointainer*/
+        #app {
+            display: flex;
+            margin: 10rem 10rem;
+        }
+        /*Container um das Diagramm*/
+        #chart {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+            padding: 1rem;
+        }
+        /*Attribute der Säule(Bar)*/
+        .bar {
+            fill: #720570;
+        }
+        /*Attribute der Werte über der Säule(Bar)*/
+        .label {
+            fill: #720570
+        }
+    </style>
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <p id="graphText">Test</p>
+    <div id="app">
+        <div id="chart">
+            <svg></svg>
+        </div>
+    </div>
+</body>
+
+</html>
